@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+
+    body {
+        @apply bg-dark
+    }
+
+    * {
+        @apply text-light dark:text-dark
+    }
+
+    /* REACT-SELECT */
+
+    .react-select .react-select__control{
+        @apply bg-dark border-none
+    }
+
+    .react-select .react-select__value-container .react-select__single-value {
+        @apply text-light dark:text-dark
+    }
+
+    .react-select .react-select__indicator-seperator {
+        @apply w-0
+    }
+
+    .react-select .react-select__menu {
+        @apply bg-dark
+    }
+
+    .react-select .react-select__menu-list {
+        @apply p-0 overflow-hidden rounded-md
+    }
+
+    .react-select .react-select__menu .react-select__option--is-hovered {
+        @apply bg-accenthover
+    }
+
+    .react-select .react-select__menu .react-select__option--is-selected {
+        @apply bg-accent
+    }
+
+    .react-select .react-select__menu .react-select__option--is-focused {
+        @apply bg-accentdark
+    }
+
+    /* .react-select .react-select__menu .react-select__option {
+        @apply bg-dark
+    } */
+}
+
